@@ -29,5 +29,7 @@ for pv_row in eachrow(solar)
         t2= Dates.DateTime(incomer[inc_row,1],"yyyy-mm-dd HH:MM:SS")
     end
     println(t1,t2,t2<t1, inc_row)
+    solar[rowIndex+1,17] = incomer[inc_row,2]
+
 end
 end
